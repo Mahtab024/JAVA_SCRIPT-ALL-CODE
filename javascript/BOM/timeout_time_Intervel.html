@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+
+
+</head>
+<body>
+
+
+    <button id="btn">Clear Intervel</button>
+
+
+
+
+  <script>
+
+    // timeout Example
+
+    // setTimeout(myfunction,5000);
+    // function myfunction(){
+    //     alert('ples  subscribe...');
+    // }
+
+    // if(){
+    //     clearTimeout();
+
+    // }
+
+    // time intervel
+
+     let t1=setInterval(fun,2000);
+function fun(){
+    console.log("pleass subscribe my channel");
+}
+
+// ager isme close karn hai tohh()
+let btn1=document.getElementById("btn");
+btn.addEventListener('click',function(){
+
+    clearInterval(t1);
+
+})
+
+
+
+
+
+  </script>  
+</body>
+</html>

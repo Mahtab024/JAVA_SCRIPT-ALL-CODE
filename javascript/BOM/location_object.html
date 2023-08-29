@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn"onclick="fun()">Redirect to google</button>
+
+    <button id="btn" onclick="fun()">Reload</button>
+
+
+    <script>
+        // console.log(location.href);
+        // console.log(location.pathname);
+        // console.log(location.protocol);
+
+        // Redirect karne ka 3 tarika hota hai 
+        function fun() {
+            // 1st method 
+            window.location = "https://www.google.com";
+            // 2nd method 
+            location.href = "https://www.google.com";
+            // 3rd method
+            location.assign = "https://www.google.com";
+
+            // 4th method (replce mthod )but ye aapke history me entry nahi kart jaha apne replace kiya hai
+            location.replace = "https://www.google.com";
+
+
+
+            // Reload method 
+            location.reload();
+        }
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

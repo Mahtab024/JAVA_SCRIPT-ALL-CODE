@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1st method to call  -->
+
+<!-- <button id="btn" onclick="btnClick ()" >Send the Docoment</button> -->
+
+                          <!--2nd method to call -->
+
+    <button id="btn">Click me!</button>                      
+
+
+
+    <script>
+
+        // 1st method to call
+        // function btnClick(){
+
+        //     alert("clicked!");
+        // } 
+
+
+
+                         //  2nd method to call event  
+
+        // function oneclick(){
+        //     alert('clicked by moon');
+        // }
+
+        // let btn=document.getElementById("btn");
+        // btn.addEventListener('click',oneclick);
+        
+
+                     // with anonymous function
+        
+        btn.addEventListener("click",function(){
+            alert("that has clicked")
+        })
+               // multiple event
+
+               btn.addEventListener("mouseover",function(){
+
+                console.log("moseover is working ");
+               });
+                btn.addEventListener("mouseout",function(){
+                    console.log('mouseout is working');
+                });
+
+                function click1(){
+                    console.log("click 1 is activated");
+
+                }
+                function click2(){
+                    console.log("click 2 is activated");
+                    
+                }
+
+                // two same event add 
+
+                btn.addEventListener('click', click1);
+                btn.addEventListener('click',click2);
+
+                // Remove the event 
+
+                btn.removeEventListener('click',click2);
+                
+
+
+
+
+
+
+
+
+
+
+        
+
+
+    </script>
+</body>
+</html>

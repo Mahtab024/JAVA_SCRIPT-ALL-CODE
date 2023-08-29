@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+<!-- traverse ka matlab hota hai ake element se dusra element me le kar jana  -->
+
+<!-- for child to parent -->
+<!-- <ul>
+    <li id="intro">list 1</li>
+    <li>list 2</li>
+    <li>list 3</li>
+    <li>list 4</li>
+
+ 
+</ul> -->
+
+<!--for parent to child  -->
+<!-- <ul id="intro">
+    <li >list 1</li>
+    <li>list 2</li>
+    <li>list 3</li>
+    <li>list 4</li> -->
+
+ <!-- select sibling -->
+
+ <ul>
+    <li >list 1</li>
+    <li id="intro">list 2</li>
+    <li>list 3</li>
+    <li>list 4</li>
+</ul>
+
+<ul>
+    <li>list a</li>
+    <li>list b</li>
+    <li>list c</li>
+    <li>list d</li>
+</ul>
+    <script>
+
+                                 //select parent by the child elment id
+
+        // let elm=document.getElementById("intro");
+        // let prt= elm.parentElement;
+        // // prt.innerHTML="Hello"; // add karne ke liye 
+        // console.log(prt); 
+
+                                // select child element by the parent 
+
+        // let elm=document.getElementById("intro");
+
+        // let node=elm.lastElementChild;
+        // console.log(node);
+
+                               // select sibling
+
+    let elm=document.getElementById("intro");
+    let sib=elm.previousElementSibling; //or //nextElementSibling;
+    console.log(sib);
+
+    
+
+
+    </script>
+</body>
+</html>

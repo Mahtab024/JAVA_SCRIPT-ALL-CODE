@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="myInput">
+
+    <script>
+        let x=document.getElementById("myInput");
+
+        // Example 1
+
+
+        x.addEventListener('focus',myfocusfuction);
+        x.addEventListener('blur',myblurfuction);
+
+        function myfocusfuction(){
+            x.style.background="yellow";
+
+        }
+        function myblurfuction(){
+            x.style.background="white";
+
+
+        // }
+
+
+        // Example 2     // change event
+
+        x.addEventListener('change', function(){
+            console.log(this.value);
+        });
+
+        //Example 3  //input event
+
+        x.addEventListener('input', function(){
+            console.log(this.value);
+        });
+
+
+
+
+
+
+    </script>
+    
+
+
+
+</body>
+</html>

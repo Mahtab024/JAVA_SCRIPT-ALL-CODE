@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+
+    <style>
+        body{
+            height: 2000px;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Hello</h1>
+
+
+
+
+    <script>
+                            // Example 1
+        // window.addEventListener('scroll',function(){
+        //     console.log("scrolling...");
+
+        // });  
+
+                          // Example 2
+        //       window.addEventListener('wheel',function(){
+        //     if(event.deltaY <0){
+        //         console.log("scrolling..up");
+        //     }else if(event.deltaY>0){
+        //         console.log("scrolling...down");
+        //     }
+
+        // });  
+
+                          //Example 3
+        window.addEventListener('wheel',function(){
+            if(window.pageYOffset >50){
+                document.boby.style.background="red";
+            }else{
+                document.boby.style.background="white";
+
+
+            }
+                
+            
+
+        });  
+
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body{
+padding: 100px;
+background-color:cornsilk ;
+        }
+        #mydiv{
+            padding: 50px;
+            background-color:darkblue;
+
+
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div id="mydiv">
+        <button id="btn"> Click hear</button>
+
+    </div>
+
+<script>
+//note:-
+
+
+// true:-captureing event      order:-(body,div,button)
+// false:-event bubbling       order:-(button,div,body)
+
+
+
+
+    let a=document.getElementById('mydiv');
+    let b=document.getElementById('btn');
+    a.addEventListener('click', mydivclicked ,true);
+    b.addEventListener('click', btnclicked, true);
+    document.body.addEventListener('click',bodyclicked,true);
+
+    function mydivclicked(){
+        console.log("div clicked...");
+
+
+    }
+    function btnclicked(event){
+        console.log("btn clickd...");
+        // event.stopPropagation(); // ager ake par click event lagaye too ye event use karen
+// isme true ko hatana hoga tab ye work karega !
+    }
+    function bodyclicked(){
+        console.log("doby clicked...");
+
+    }
+
+</script>
+
+
+    
+</body>
+</html>
